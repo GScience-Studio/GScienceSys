@@ -1,0 +1,10 @@
+language: asm
+sudo: enable
+os: linux
+addons:
+    apt:
+        packages:
+            - nasm
+script:
+    - chmod -R 777 .
+    - sudo sh build.sh
